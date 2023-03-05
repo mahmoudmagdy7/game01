@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game DB</title>
+  <!-- styles  -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id='back' class="back position-fixed d-none">
+    <i class="fa-solid fa-x"></i>
+  </div>
+  <div class="overlay position-fixed start-0 end-0 top-0 bottom-0 justify-content-center align-items-center">
+    <div class="position-relative">
+      <div class="loader-line"></div>
+    </div>
+
+  </div>
+  <section class="game-content ">
+
+  </section>
+
+  <section class="home-content">
+    <!-- header starting -->
+    <header>
+      <nav class="row flex-column align-items-center ">
+        <a class="col logo-top">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:v="https://vecta.io/nano"
+            viewBox="0 0 1906.8 490.7">
+            <path
+              d="M174.1 356.6h65.7v40.9c-13.4 9.1-30.7 13.9-53.7 13.9-53.2 0-91.1-38.9-91.1-93.8v-1c0-51.4 37.4-91.8 85.8-91.8 33.6 0 57 11.5 81 31.7l54.6-66.4c-35.5-30.8-77.2-48.6-136.1-48.6C76.8 141.5.1 218.4.1 316.5v1c0 101.9 77.7 174.1 182.2 174.1 61.4 0 110.3-22.6 145.7-52.4v-151H174.1v68.4zM471.8 146L329.4 485h97.3l24-60.6h129.9l24 60.6h99.7L561.4 146h-89.6zm6.2 205.8l37.9-95.2 37.4 95.2H478zm413.2-73.1l-80.1-130.3h-98.3V485h91.1V292.2l85.3 131.3h1.9L977 291.7V485h92.5V148.4h-98.3l-80 130.3zM1107.4 485h93V148.4h-93V485zm355.2-158.7l-138.1-177.9h-86.8V485h92V300.3L1473.6 485h81V148.4h-92v177.9zm290.4-38v68.3h65.7v40.9c-13.4 9.1-30.7 13.9-53.7 13.9-53.2 0-91.1-38.9-91.1-93.8v-1c0-51.4 37.4-91.8 85.8-91.8 33.6 0 57 11.5 81 31.7l54.6-66.4c-35.5-30.8-77.2-48.6-136.1-48.6-103.5 0-180.2 76.9-180.2 175v1c0 101.9 77.7 174.1 182.2 174.1 61.4 0 110.3-22.6 145.7-52.4v-151H1753zM638.8 101.7h27.4V2.6h-27.4v99.1zM750.5 55L709.8 2.6h-25.6v99.1h27.1V47.3l42.4 54.4h23.9V2.6h-27.1V55zm86.7-15c-13.8-3.1-17.2-5.1-17.2-9.6v-.3c0-3.7 3.2-6.4 9.9-6.4 8.8 0 18.6 3.3 27.7 9.8l13.7-19.4C860.6 5.5 847.4.9 830.6.9c-23.7 0-38.3 13.3-38.3 31.7v.3c0 20.2 16.2 26.2 37.3 31 13.6 3.3 16.8 5.4 16.8 9.6v.3c0 4.2-4 6.8-11.4 6.8-11.4 0-22.2-4.1-32-11.9L787.6 87c12.3 10.9 28.8 16.4 46.3 16.4 24 0 40-12 40-32.3v-.3c0-18.5-14.2-25.9-36.7-30.8zM965.5 2.6H879v24.1h29.5v75h27.4v-75h29.6V2.6zm33.4-.7L957 101.7h28.7l7.1-17.8h38.3l7.1 17.8h29.4l-42.1-99.8h-26.6zm1.9 60.6l11.2-28 11 28h-22.2zm142.4-7.5l-40.7-52.4H1077v99.1h27.1V47.3l42.4 54.4h23.9V2.6h-27.1V55zm39.2-52.4v24.1h29.5v75h27.4v-75h29.6V2.6h-86.5z" />
+          </svg></a>
+        <ul class="list-unstyled d-flex col-8 justify-content-between px-md-5 top-nav">
+          <i class="fa-solid fa-location-crosshairs toggle-icon"></i>
+          <li id='mmorpg' class="item active">Mmorpg</li>
+          <li id='shooter' class="item">Shooter</li>
+          <li id='sailing' class="item">Sailing</li>
+          <li id='permadeath' class="item">Permadeath</li>
+          <li id='superhero' class="item">Superhero</li>
+          <li id='pixel' class="item">Pixel</li>
+        </ul>
+      </nav>
+
+    </header>
+    <!-- main starting  -->
+    <main class="">
+
+      <div class=" p-4">
+        <div class=" row g-3 cards">
+
+        </div>
+
+    </main>
+
+  </section>
+  <footer class="text-center bg-black text-white py-4">
+    <p class="mb-0">UI credit <a class="text-decoration-none" href="https://www.instant-gaming.com"
+        target="_blank">instant gaming</a>
+    </p>
+
+  </footer>
+  <script src="JS/JQuery.js" type="module" defer></script>
+  <script src="JS/all.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="Js/pilpil.js"></script>
+  <script src="JS/main.js" type="module"></script>
+</body>
+
+</html>
